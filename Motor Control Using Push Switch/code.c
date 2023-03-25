@@ -9,7 +9,7 @@ void setup()
 
 void loop()
 {
-  value = digitalRead(6);
+  value = digitalRead(button);
   if(value == HIGH){
   digitalWrite(motor,HIGH);
   delay(10);
