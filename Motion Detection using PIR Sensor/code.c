@@ -10,10 +10,9 @@ void loop()
   sensorState = digitalRead(2);
    
   if (sensorState == HIGH) {
-    digitalWrite(13, HIGH);
     Serial.println("Motion Detected");
-  } else {
-    digitalWrite(13, LOW);
+  } 
+  else {
     Serial.println("No Motion");
   }
   delay(10); 
