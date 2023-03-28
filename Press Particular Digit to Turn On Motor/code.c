@@ -1,5 +1,5 @@
 #include <Keypad.h>
-int motor = 13;
+int motor = 12;
 const byte ROWS = 4; //four rows
 const byte COLS = 4; //four columns
 //define the cymbols on the buttons of the keypads
