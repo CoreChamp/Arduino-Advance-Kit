@@ -26,7 +26,7 @@ void loop()
   
   } else {
     digitalWrite(led, LOW);
-    Serial.println("Door Closing");
+    Serial.println("Door Close");
     myservo.write(0);
   }
   delay(15); 
