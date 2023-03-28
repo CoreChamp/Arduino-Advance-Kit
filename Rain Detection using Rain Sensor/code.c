@@ -1,13 +1,13 @@
 int sensorState = 0;
 void setup()
 {
-  pinMode(12, INPUT); 
+  pinMode(4, INPUT); 
   Serial.begin(9600);
 }
 void loop()
 {
   
-  sensorState = digitalRead(12);
+  sensorState = digitalRead(4);
    
   if (sensorState == HIGH) {
     Serial.println("Raining");
