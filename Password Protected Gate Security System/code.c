@@ -21,9 +21,6 @@ Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 String password = "1234D";
 String mypassword;
  
-int redled = 12;
-int lock = 13;
- 
 int counter = 0; 
 int attempts = 0; 
 int max_attempts = 3; 
@@ -34,12 +31,6 @@ void setup(){
   
   myservo.write(0);
   delay(1000);
-  
-  pinMode(redled, OUTPUT);
-  pinMode(lock, OUTPUT);
-  
-  digitalWrite(redled, LOW);
-  digitalWrite(lock, LOW);
   
   Serial.println("enter password");
     
