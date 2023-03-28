@@ -1,13 +1,13 @@
 int sensor = 8; 
-int LED   = 13; 
-int ledState = LOW;     
+int FAN   = 13; 
+int FANState = LOW;     
 int previoussensorState;    
 int presentsensorState; 
 
 void setup() {
   Serial.begin(9600);              
   pinMode(sensor, INPUT_PULLUP); 
-  pinMode(LED, OUTPUT);  
+  pinMode(FAN, OUTPUT);  
           
   presentsensorState = digitalRead(sensor);
 }
@@ -18,11 +18,11 @@ void loop() {
   
   if(previoussensorState == HIGH && presentsensorState == LOW) {
     Serial.println("Clap Detected");
-    ledState = !ledState; 
-    digitalWrite(LED, ledState); 
-    digitalRead(ledState);
+    FANState = !FANState; 
+    digitalWrite(FAN, FANState); 
+    digitalRead(FANState);
     
-    if (ledState == HIGH){
+    if (FANState == HIGH){
       Serial.println("Light On ");
     }
     else{
