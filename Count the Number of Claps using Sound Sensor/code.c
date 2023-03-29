@@ -1,4 +1,4 @@
-const int sensorPin = 4;     // the number of the soundsensor pin
+const int sensorPin = 8;     // the number of the soundsensor pin
 
 // variables will change:
 int sensorState = 0;         // variable for reading the soundsensor status
