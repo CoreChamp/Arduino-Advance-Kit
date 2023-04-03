@@ -1,4 +1,4 @@
-int red = 10;
+int red = 10;                   //RGB LED type - Common Cathode
 int green = 8;
 int blue = 9;
 void setup()
