@@ -2,7 +2,7 @@ const int SW_pin = 2; // digital pin connected to switch output
 const int X_pin = A0; // analog pin connected to X output
 const int Y_pin = A1; // analog pin connected to Y output
 
-#define RED 7 
+#define RED 7              //RGB LED type - Common Cathode
 #define GREEN 9
 #define BLUE 6
 
