@@ -1,4 +1,4 @@
-#define button 7
+#define button 7                    //RGB LED type - Common Cathode
 #define redLED 10
 #define greenLED 8
 #define blueLED 9
