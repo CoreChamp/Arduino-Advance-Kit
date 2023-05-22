@@ -13,7 +13,7 @@ void setup()
 
 void loop() 
 {
-	int readData = DHT.read22(dataPin);
+	int readData = DHT.read11(dataPin);
 	float t = DHT.temperature;
 	float h = DHT.humidity;
 	lcd.setCursor(0,0); // Sets the location at which subsequent text written to the LCD will be displayed
