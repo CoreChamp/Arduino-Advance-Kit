@@ -1,8 +1,8 @@
-#include <LiquidCrystal.h> // includes the LiquidCrystal Library
+#include <LiquidCrystal_I2C.h>
 #include <dht.h>
 #define dataPin 8
 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // Creates an LCD object. Parameters: (rs, enable, d4, d5, d6, d7)
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 dht DHT;
 bool showcelciusorfarenheit = false;
 
