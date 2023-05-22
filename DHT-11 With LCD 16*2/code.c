@@ -8,7 +8,9 @@ bool showcelciusorfarenheit = false;
 
 void setup() 
 {
-	lcd.begin(16,2); // Initializes the interface to the LCD screen, and specifies the dimensions (width and height) of the display
+	lcd.init();
+        lcd.backlight();
+	lcd.begin(16,2); // Initializes the interface to the LCD screen, and specifies the dimensions (width and height) of the display	
 }
 
 void loop() 
