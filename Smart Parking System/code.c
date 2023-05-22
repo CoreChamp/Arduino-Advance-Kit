@@ -1,7 +1,7 @@
 #include <Wire.h> 
-#include <LiquidCrystal.h> // includes the LiquidCrystal Library
+#include <LiquidCrystal_I2C.h>
 #include <Servo.h> 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // Creates an LCD object. Parameters: (rs, enable, d4, d5, d6, d7)
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 Servo myservo1;
 
 int IR1 = 2; //Ir Sensor Pins Define
@@ -16,6 +16,8 @@ pinMode(IR1, INPUT);
 pinMode(IR2, INPUT);
 myservo1.attach(3);
 myservo1.write(100);
+lcd.init();
+lcd.backlight();
 lcd.setCursor (0,0);
 lcd.print("     ARDUINO    ");
 lcd.setCursor (0,1);
